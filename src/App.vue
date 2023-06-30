@@ -12,6 +12,7 @@ type WishType = {
   id: string | number,
   title: string,
   text: string,
+  editOpen: boolean,
 };
 
 const wishes : WishType[] = [
@@ -55,7 +56,7 @@ onMounted(() => getWishesToClass());
     <div class="grid grid-cols-3 gap-10">
       <Card
         v-for="wish of reactiveWishes"
-        :key="wish.getId()"
+        :key="wish.id"
       >
         <template #title>
           <template v-if="!wish.editOpen">

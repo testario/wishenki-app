@@ -5,7 +5,6 @@ interface IsWish {
   editOpen: boolean;
   toggleEdit: () => void;
   edit: (a: string, b: string) => void;
-  getId: () => string | number;
 }
 
 export default IsWish;

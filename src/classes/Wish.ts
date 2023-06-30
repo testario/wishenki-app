@@ -19,9 +19,6 @@ class Wish implements IsWish {
       this.editOpen = false;
     }
   }
-  getId(): string | number {
-    return this.id;
-  }
   toggleEdit(): void {
     this.editOpen = !this.editOpen;
   }
