@@ -30,7 +30,7 @@ export default ({ mode }: any) => {
       preprocessorOptions: {
         scss: {
           additionalData: [
-            `@import "@/assets/style/variables.scss";`,
+
           ].join('\n'),
         },
       },
@@ -47,8 +47,8 @@ export default ({ mode }: any) => {
         },
       },
     },
-    base: '/admin',
-    publicDir: '/admin',
+    base: '/',
+    publicDir: '/',
     build: {
       rollupOptions: {
         treeshake:  false
