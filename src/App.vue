@@ -34,7 +34,7 @@ const getWishesToClass = async(): Promise<void> => {
 const confirm = useConfirm();
 const toast = useToast();
 
-const confirmationHandler = (wish: IsWish) => {
+const confirmationHandler = (wish: IsWish): void => {
   confirm.require({
     group: "confirmation",
     message: "Are you sure you want to proceed?",
